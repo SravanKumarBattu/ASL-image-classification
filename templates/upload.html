@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="centered">
+    <div class="row">
+        <div class="col-md-5"> 
+            <div class="image-container">
+                <figure>
+                  <img src="/static/uploads/{{display_image}}" style="width:400px;height:250px;">
+                </figure>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <p style="color:red"> {{predictions}}</p>
+    </div>
+
+    </br>
+
+    <div class="row">
+        <div class="col-md-5">
+            <div class="upload-form">
+                <p><b>Upload another?</b></p>
+                <form action = "/uploader" method = "POST" 
+                          enctype = "multipart/form-data">
+                    <input type = "file" name = "file" />
+                    <input type = "submit"/>
+            </form>
+            </div> 
+            <div class="alpha" style: padding-left>'A': 0 
+                'B': 1,
+                'C': 2,
+                'D': 3,
+                'E': 4,
+                'F': 5,
+                'G': 6,
+                'H': 7,
+                'I': 8,
+                'J': 9,
+                'K': 10,
+                'L': 11,
+                'M': 12,
+                'N': 13,
+                'O': 14,
+                'P': 15,
+                'Q': 16,
+                'R': 17,
+                'S': 18,
+                'T': 19,
+                'U': 20,
+                'V': 21,
+                'W': 22,
+                'X': 23,
+                'Y': 24,
+                'Z': 25</div>     
+        </div>
+    </div>
+</div>
+{% endblock %}
